@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(./image/background2.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 86px;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: 30%;
+  width: 148px;
+}
+
+nav button {
+  border: 0;
+  outline: 0;
+  background-color: #e50914;
+  color: white;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 7px 20px;
+  margin-left: 13px;
+  margin-right: 40px;
+}
+.lang {
+  display: inline-flex;
+  align-items: center;
+  background: transparent;
+  border: 1px solid white;
+  padding: 7px 10px;
+  margin-right: 0;
+  width: 126px;
+  color: white;
+  padding-left: 35px;
+  font-size: 14px;
+}
+.lang img {
+  width: 10px;
+  margin-left: 15px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12%;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+  vertical-align: middle;
+}
+.header h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 16px;
+  text-align: center;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.header h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 2%;
+}
+.emaill {
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+}
+.emaill input {
+  border: 0;
+  outline: 0;
+  margin-left: 30%;
+  width: 382px;
+  height: 56px;
+  background-color: black;
+  opacity: 0.7;
+  border: 0.4px solid white;
+  color: white;
+  padding-left: 20px;
+}
+.emaill button {
+  border: 0;
+  outline: 0;
+  background: rgb(229, 9, 20);
+  font-weight: 500;
+  font-size: 24px;
+  margin-left: 0.5rem;
+  border-radius: 4px;
+  color: white;
+  width: 201px;
+  height: 56px;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  cursor: pointer;
+}
+.emaill button img {
+  width: 17px;
+  height: 17px;
+}
+::placeholder {
+  color: white;
+  padding-left: 3%;
+  font-size: 17px;
+}
+.email {
+  font-size: 7px;
+}
+
+.line {
+  background: rgb(31, 31, 31);
+  height: 8px;
+  width: 100%;
+}
+.sub {
+  padding: 72px 12%;
+}
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 22px;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  text-align: left;
+}
+.img img {
+  width: 570px;
+}
+.text {
+  flex-basis: 50%;
+  margin-bottom: 30px;
+}
+.img {
+  flex-basis: 50%;
+  margin: auto;
+}
+sub h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.questions h2 {
+  padding: 10px 12%;
+  font-size: 48px;
+  text-align: center;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  margin-bottom: 0px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+.questions {
+  padding: 10px 11.5%;
+}
+
+/* ! New css for accordion */
+.accordion {
+  color: #fff;
+  cursor: pointer;
+  padding: 24px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 24px;
+  transition: 0.4s;
+  background: #303030;
+  margin-bottom: 9px;
+  height: 84px;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.active,
+.accordion:hover {
+  background: gray;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  color: white;
+  overflow: hidden;
+  background: #303030;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+  font-size: 22px;
+  margin: 0px;
+}
+.sign h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.875rem;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 3%;
+}
+.Qu {
+  margin-bottom: 3%;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.end .coloum {
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+.end {
+  color: rgba(255, 255, 255, 0.7);
+}
+.end .coloum a {
+  display: block;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  margin-bottom: 10px;
+}
+.ind p {
+  display: block;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
